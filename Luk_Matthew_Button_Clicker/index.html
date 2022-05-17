@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="navbar">
+                <p id="heading">Dojonary</p>
+                <p><input type="text" name="Search" id="searchbar" placeholder="Search"></p>
+                <p><button onclick="logout(this)" id="btn1">Login</button></p>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="col">
+                <div class="col-left">
+                    <div class="word">
+                        <p class="word1">ninja</p>
+                        <p class="word2">noun</p>
+                        <p>Plural:<span class="word3">ninjas</span></p>
+                    </div>
+                    <div class="likes">
+                        <button onclick="alert('Ninja was liked')" class="btn3">13 likes</button>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <p class="def">A practioner skilled in the <span class="underline">Japanese</span> art of <span class="underline">ninjutsu</span></p>
+                </div>
+            </div>
+            <div class ="col2">
+                <div class="col2-top">
+                    <p id="text2">Dojonary is defined by </p>
+                    <p id="you">YOU</p>
+                </div>
+                <div class="col2-bottom">
+                    <button onclick="hide(this)" id="btn2">Add Definition</button>
+                </div>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="col">
+                <div class="col-left">
+                    <div class="word">
+                        <p class="word1">ninja</p>
+                        <p class="word2">noun</p>
+                        <p>Plural:<span class="word3">ninjas</span></p>
+                    </div>
+                    <div class="likes">
+                        <button class="btn3">37 likes</button>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <p class="def">A <span class="underline">programmer</span> who breaks down problems with <span class="underline">zen</span>-like focus</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
