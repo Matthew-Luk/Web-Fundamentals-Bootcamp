@@ -1,0 +1,151 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 0% 10%;
+}
+
+.row1 {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #cccccc;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+#heading {
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+#searchbar {
+    width: 200px;
+}
+
+#btn1 {
+    width: 55px;
+    height: 23px;
+    color: #feffff;
+    background-color: #2b78e4;
+    border: 1px solid black;
+    box-shadow: 3px 2px black;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.col {
+    display: flex;
+    width: 60%;
+    height: 200px;
+    border: 2px solid #050505;
+}
+
+.col2{
+    width: 35%;
+    height: 150px;
+    border: 2px solid #050505;
+}
+
+.col2-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#text2 , #you {
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    display: inline;
+}
+
+#you {
+    font-weight: 600;
+}
+
+#btn2 {
+    width: 80%;
+    height: 40px;
+    color: black;
+    background-color: #93c47d;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+}
+
+.col-left {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.col-right {
+    display: flex;
+    flex: 3;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.likes {
+    display: flex;
+    justify-content: center;
+}
+
+.btn3 {
+    background-color: #ffd966;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 3px 2px black;
+    width: 80px;
+    height: 25px;
+    margin-top: 40px;
+}
+
+.word {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.word1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+
+.word2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.word3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.def {
+    font-size: larger;
+    margin-left: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+    color: #085394;
+}
