@@ -1,0 +1,37 @@
+.box1 {
+    height: 200px;
+    width: 60%;
+    border: 2px solid black;
+    margin: 100px;
+}
+
+.box1t {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#btn {
+    width: 70px;
+    height: 40px;
+    background-color: #ffd966;
+    border: 2px solid black;
+    color: black;
+    box-shadow: 3px 3px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#heading {
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box1b p {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#count {
+    font-family: Arial, Helvetica, sans-serif;
+}
