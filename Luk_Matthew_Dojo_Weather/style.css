@@ -1,0 +1,138 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    border: 2px solid black;
+    height: 800px;
+    width: 100%;
+}
+
+.navbar {
+    color: #fff;
+    background-color: #9fc5f8;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    flex: 1;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+}
+
+.navbar-right {
+    display: flex;
+    flex: 1;
+    justify-content: right;
+    margin-right: 100px;
+}
+
+.navbar-right p {
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 30px;
+}
+
+.content-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 100px;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+}
+
+.content-topl {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+.content-topr {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 0px;
+}
+
+.content-bottom {
+    display: flex;
+    margin: 0px 100px;
+    justify-content: space-between;
+}
+
+.weather {
+    height: 350px;
+    width: 200px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather h3, .weather p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.weatherp {
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 0px;
+}
+
+.temp {
+    display: flex;
+}
+
+.high, .low {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+high::after, low::after {
+    content: "°";
+}
+
+.high {
+    color: #cf2a27;
+}
+
+.low {
+    color: #2b78e4;
+}
+
+#popupbar {
+    position: fixed;
+    height: 100px;
+    border: 2px solid black;
+    margin: 0px 100px;
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cookie {
+    height: 60px;
+    margin: 0px 15px;
+}
+
+#popupt {
+    font-weight: bold;
+}
+
+#btn {
+    width: 100px;
+    height: 30px;
+    background-color: #9fc5f8;
+    box-shadow: 3px 3px black;
+    border: 2px solid black;
+    margin-right: 10px;
+}
