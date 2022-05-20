@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-left">
+                <h1>Dojo Weather</h1>
+            </div>
+            <div class="navbar-right">
+                <!-- I wanted to use two different types of functions to create the alert just for practice. -->
+                <p onclick="city()">Burbank</p>
+                <p onclick="alert('Loading weather report for Chicago')">Chicago</p>
+                <p onclick="alert('Loading weather report for Dallas')">Dallas</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-top">
+                <div class="content-topl">
+                    <p>San Jose</p>
+                </div>
+                <div class="content-topr">
+                    <p>show temperature in
+                        <select onchange="convert()" name="temp" id="temp">
+                            <option>°C</option>
+                            <option>°F</option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+            <div class="content-bottom">
+                <div class="weather">
+                    <h3>Today</h3>
+                    <img class="weatherp" src="./assets/some_rain.png" alt="some_rain">
+                    <p>some rain</p>
+                    <p><span class="high" id="temp1">24</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="low" id="temp2">18</span></p>
+                </div>
+                <div class="weather">
+                    <h3>Tomorrow</h3>
+                    <img class="weatherp" src="./assets/some_sun.png" alt="some_sun">
+                    <p>some rain</p>
+                    <p><span class="high" id="temp3">27</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="low" id="temp4">19</span></p>
+                </div>
+                <div class="weather">
+                    <h3>Friday</h3>
+                    <img class="weatherp" src="./assets/some_clouds.png" alt="some_clouds">
+                    <p>some rain</p>
+                    <p><span class="high" id="temp5">21</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="low" id="temp6">16</span></p>
+                </div>
+                <div class="weather">
+                    <h3>Saturday</h3>
+                    <img class="weatherp" src="./assets/some_sun.png" alt="some_sun.png">
+                    <p>some rain</p>
+                    <p><span class="high" id="temp7">26</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="low" id="temp8">21</span></p>
+                </div>
+            </div>
+        </div>
+        <div id="popupbar">
+            <img id="cookie" src="./assets/cookie.png" alt="cookie">
+            <div>
+                <p id="popupt">Stop! Cookie time</p>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <span><a href="#">Read more...</a></span></p>
+            </div>
+            <button onclick="hide()" id="btn">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
