@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <h2 class="nav-profile">Profile</h2>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Find connections</a></li>
+        </ul>
+        <button class="signout">Sign Out</button>
+    </div>
+    <div class="row">
+        <div class="profile">
+            <div class="profile-top">
+                <img src="./assets/user-circle.png" alt="user-circle" class="avatar">
+            </div>
+            <div class="profile-bottom">
+                <p id="pbn">Jane Doe</p>
+                <p><img src="./assets/map-marker.png" alt="map-marker" class="map-marker">&nbsp; Seattle</p>
+                <p id="pbm1">Developer | Engineer | Problem Solver</p>
+                <p id="pbm2">Master of shadows and the Internet!</p>
+                <a onclick="changeName('pbn')" href="#"><img src="./assets/gear.png" alt="gear" class="gear">edit profile</a>
+            </div>
+        </div>
+        <div class="requests">
+            <div class="requests-top">
+                <button id="btn1">2</button>
+                <h3>&nbsp;Connection Requests</h3>
+            </div>
+            <div class="requests-bottom">
+                <div id="todd">
+                    <div class="requests-bottom1">
+                        <img src="./assets/todd-s.jpg" alt="todd" class="icon">
+                        <p>Todd E</p>
+                    </div>
+                    <div class="requests-bottom2">
+                        <img onclick="hide('todd')" id="a1" src="./assets/accept-circle.png" alt="accept-circle" class="icon2">
+                        <img onclick="hide2('todd')" id="d1" src="./assets/close-circle.png" alt="close-circle" class="icon2">
+                    </div>
+                </div>
+                <div id="phil">
+                    <div class="requests-bottom1">
+                        <img src="./assets/phil-s.jpg" alt="todd" class="icon">
+                        <p>Phil K</p>
+                    </div>
+                    <div class="requests-bottom2">
+                        <img onclick="hide3('phil')" id="a2" src="./assets/accept-circle.png" alt="accept-circle" class="icon2">
+                        <img onclick="hide4('phil')" id="d2" src="./assets/close-circle.png" alt="close-circle" class="icon2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="education">
+            <div class="education-top">
+                <h3>Education</h3>
+            </div>
+            <div class="education-bottom">
+                <p id="eb1">Coding Dojo - Full Stack Bootcamp</p>
+                <p id="eb2">Dec 2019 - Mar 2020</p> 
+                <p>Triple black belt in Python, MERN, C#...</p>
+            </div>
+        </div>
+        <div class="connections">
+            <div class="connections-top">
+                <button id="btn2">418</button>
+                <h3>&nbsp;Your Connections</h3>
+            </div>
+            <div class="connections-mid">
+                <div class="connections-name">
+                    <img src="./assets/adrien-s.jpg" alt="adrien" class="icon">
+                    <p>Adrien D</p>
+                </div>
+                <div class="connections-name">
+                    <img src="./assets/anne-s.jpg" alt="anne" class="icon">
+                    <p>Anne J</p>
+                </div>
+                <div class="connections-name">
+                    <img src="./assets/alayne-s.jpg" alt="alayne" class="icon">
+                    <p>Alayne T</p>
+                </div>
+                <div class="connections-name">
+                    <img src="./assets/arry-s.jpg" alt="arry" class="icon">
+                    <p>Arry Y</p>
+                </div>
+            </div>
+            <div class="connections-bottom">
+                <div>
+                    <h3><a href="#">View More</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
