@@ -40,5 +40,13 @@ start: 4, end: 8
 var x = ["a", "b", "c", "d", "e"];
 
 function reverse(arr) {
-    
+    var temp = []
+    for (i = x.length-1; i >= 0; i--) {
+        temp.push(x[i])
+    }
+    return temp
 }
+
+var y = reverse(x)
+console.log(y)
+// Output prediction = ["e", "d", "c", "b", "a"]
