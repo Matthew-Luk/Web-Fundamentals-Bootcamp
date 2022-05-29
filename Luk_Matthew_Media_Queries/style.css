@@ -1,0 +1,38 @@
+.row {
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+button {
+    height: 30px;
+}
+
+@media only screen and (max-width: 500px){
+    .sm-4 {
+        width: 100%;
+        background-color: yellow;
+    }
+}
+
+@media only screen and (min-width: 501px){
+    .med-2 {
+        width: 50%;
+        background-color: blue;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .lg-1 {
+        width: 25%;
+        background-color: red;
+        display: inline;
+    }
+}
