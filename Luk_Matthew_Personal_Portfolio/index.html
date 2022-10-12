@@ -1,66 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-</head>
-<body>
-    <h1>Matthew Luk</h1>
-    <img src="/assets/picture_of_me.jpeg" alt="picture of me">
-    <a href="https://github.com/Matthew-Luk">My Github</a>
-    <a href="https://www.linkedin.com/in/matthew-luk-20117181/">My LinkedIn</a>
-    <a href="mailto:matthew.luk@yahoo.com">My Email</a>    
-        <h2>About Me:</h2>
-            <p>My name is Matthew and some of my favorite things to do/hobbies are eating, sleeping, 
-                watching movies and tv shows, hanging out with friends, watching MMA fights. I have bounced
-                around many different jobs over the past few years and now I am trying to learn how to code
-                and become a software engineer.</p>
-        <h2>Technologies</h2>
-    <div>
-        <table> <!-- I haven't learned most of these yet, I was just copying the template. -->
-            <tr>
-                <th>Front-End</th>
-                <th>Python</th>
-                <th>JavaScript</th>
-                <th>Database</th>
-                <th>Concepts</th>
-            </tr>
-            <tr>
-                <td>HTML 5</td>
-                <td>Django</td>
-                <td>Express</td>
-                <td>MySQL</td>
-                <td>AJAX</td>
-            </tr>
-            <tr>
-                <td>CSS3</td>
-                <td>Flask</td>
-                <td>Mongoose</td>
-                <td>MongoDB</td>
-                <td>OOP</td>
-            </tr>
-            <tr>
-                <td>Bootstrap</td>
-                <td>Unittest</td>
-                <td>React</td>
-                <td></td>
-                <td>REST</td>
-            </tr>
-        </table>
-    </div>
-        <h3>Contact Me</h3>
-        <form>
-            <label>Name: </label>
-            <input type="text" name="name">
-            <label>Email: </label>
-            <input type="text" name="email">
-            <div>
-                <label>Message:</label>
-                <textarea name="message" cols="40" rows="3"></textarea>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <h1>Matthew Luk</h1>
+            <img src="./assets/picture_of_me.jpeg" alt="picture of me" id="pic">
+        </div>
+        <div>
+            <a href="https://github.com/Matthew-Luk">My Github</a>
+            <a href="https://www.linkedin.com/in/matthew-luk-20117181/">My LinkedIn</a>
+            <a href="mailto:matthew.luk@yahoo.com">My Email</a>    
+        </div>
+        <div>
+            <h2>About Me:</h2>
+            <p id="about">My name is Matthew and some of my favorite things to do/hobbies are eating, sleeping, 
+            watching movies and tv shows, hanging out with friends, watching MMA fights. I have bounced
+            around many different jobs over the past few years and now I am trying to learn how to code
+            and become a software engineer.</p>
+            <h2>Technologies</h2>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Front-End</th>
+                        <th>Python</th>
+                        <th>JavaScript</th>
+                        <th>Database</th>
+                        <th>Concepts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML 5</td>
+                        <td>Django</td>
+                        <td>Express</td>
+                        <td>MySQL</td>
+                        <td>AJAX</td>
+                    </tr>
+                    <tr>
+                        <td>CSS3</td>
+                        <td>Flask</td>
+                        <td>Mongoose</td>
+                        <td>MongoDB</td>
+                        <td>OOP</td>
+                    </tr>
+                    <tr>
+                        <td>Bootstrap</td>
+                        <td>Unittest</td>
+                        <td>React</td>
+                        <td></td>
+                        <td>REST</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2>Social Snake</h2>
+            <div class="social">
+                <p>Social Media App made in Python -</p>
+                <a href="">code</a>
+                <p>|</p>
+                <a href="">deployed</a>
             </div>
-            <input type="submit" value="Submit Here!">
-        </form>
-</body>
+        </div>
+        <div>
+            <h2>Contact Me</h2>
+            <form>
+                <label>Name: </label>
+                <input type="text" name="name">
+                <label>Email: </label>
+                <input type="text" name="email">
+                <div>
+                    <label>Message:</label>
+                    <textarea name="message" cols="48" rows="3"></textarea>
+                </div>
+                <input id="btn" type="submit" value="Send Message">
+            </form>
+        </div>
+    </body>
 </html>
