@@ -37,14 +37,14 @@
             <div>
                 <label>Gender Identity:</label>
                 <div>
-                    <input type="radio">
-                        <label for="Male">Male</label>
-                    <input type="radio">
-                        <label for="Female">Female</label>
-                    <input type="radio">
-                        <label for="Non-binary">Non-binary</label>
-                    <input type="radio">
-                        <label for="I prefer not to answer">I prefer not to answer</label>
+                    <input type="radio" name="GI" value="male" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="GI" value="female" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="GI" value="NB" id="NB">
+                    <label for="NB">Non-binary</label>
+                    <input type="radio" name="GI" value="NA" id="NA">
+                    <label for="NA">I prefer not to answer</label>
                 </div>
             </div>
             <div>
@@ -65,7 +65,8 @@
                 </select>
             </div>
             <div>
-                <input type="checkbox">Yes, I would like to receive periodic email updates</input>
+                <input name="accept" type="checkbox" id="accept">
+                <label for="accept">Yes, I would like to receive periodic email updates</label>
             </div>
             <div>
                 <input id="btn" type="submit" value="Create Account">
