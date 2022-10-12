@@ -1,7 +1,7 @@
 .nav {
     background-color:rgb(55, 51, 51);
     height: 50px;
-    width: 800px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,15 +9,15 @@
 }
 
 .nav-title {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: roboto;
     color: white;
 }
 
 .nav-links {
     display: flex;
-    width: 50%;
+    width: 30%;
     list-style-type: none;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .nav a {
@@ -30,9 +30,10 @@
     background-color: rgb(32, 181, 181);
     color: white;
     box-shadow: 2px 2px black;
+    font-family: roboto;
 }
 
 li {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: roboto;
 }
