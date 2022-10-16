@@ -1,11 +1,9 @@
-/* Zero's out CSS */
 *{
     padding:0px;
     margin:0px;
     box-sizing:border-box;
     border-radius:15px;
 }
-
 
 .wrapper {
     border:4px solid green;
@@ -16,12 +14,10 @@
     height: 700px;
     padding:0px 20px;
     margin:30px;
-
 }
 
 .side-bar,nav,.content-holder,.hero{
     border:4px solid black;
-
 }
 
 .nav-content,.side-bar-content,.hero-content{
@@ -31,7 +27,6 @@
 nav{
     height:70px;
     padding:10px;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -53,7 +48,6 @@ nav{
     align-items:center;
 }
 
-
 .side-bar{
     height:480px;
     width:350px;
@@ -67,18 +61,18 @@ nav{
 }
 
 .side-bar-content{
-    height:140px;
+    height:110px;
     width:140px;
     margin:5px;
     background-color: rebeccapurple;
 }
-
 
 .hero{
     height:480px;
     width:900px;
     padding:10px;
     display:flex;
+    justify-content: space-between;
     flex-wrap:wrap;
     background-color: blue;
 }
