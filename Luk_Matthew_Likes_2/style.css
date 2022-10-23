@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: roboto;
 }
 
 .navbar {
@@ -11,26 +12,26 @@
     padding: 0px 20px;
     background-color: black;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 300px;
 }
 
 .yourfeed {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: xx-large;
 }
 
 .content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .col1 {
-    width: 35%;
+    width: 25%;
     display: flex;
     justify-content: left;
+    margin-right: 20px;
 }
 
 .box1 {
@@ -44,31 +45,40 @@
 }
 
 .col2 {
-    width: 60%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: right;
 }
 
 .box2 {
-    width: 90%;
+    width: 100%;
     height: 200px;
     border: 2px solid black;
     margin: 20px 50px 0px 0px;
+    display: flex;
+    padding-left: 30px;
 }
 
-.box3 {
-    width: 90%;
-    height: 200px;
-    border: 2px solid black;
-    margin: 15px 50px 0px 0px;
+.boxl {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin-right: 30px;
 }
 
-.box4 {
-    width: 90%;
-    height: 200px;
-    border: 2px solid black;
-    margin: 15px 50px 0px 0px;
+.boxr {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxl1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
 }
 
 #pfp {
@@ -78,28 +88,17 @@
 }
 
 #box1name {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
     margin-top: 40px;
 }
 
 .heading {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
 }
 
-.boxt{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    align-items: center;
-}
-
 .boxb {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: large;
-    margin: 10px 30px;
+    margin-top: 50px;
 }
 
 .btn {
@@ -109,15 +108,10 @@
     border: 2px solid black;
     color: black;
     box-shadow: 3px 3px black;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-}
-
-a {
-    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
 }
 
 #count, #count2, #count3 {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
