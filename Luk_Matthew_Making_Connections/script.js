@@ -3,6 +3,8 @@ var elem2 = document.getElementById("phil")
 var count = 0
 var count2 = 2
 var count3 = 418
+var count4 = 0
+var signout = document.querySelector("#signout")
 
 function changeName() {
     console.log("changeName is working")
@@ -45,4 +47,15 @@ function hide4() {
     elem2.remove()
     document.getElementById("btn1").innerText = count2 - 1
     count2 = 1
+}
+
+function changeSignout() {
+    console.log("changeSignout is working")
+    if(count4 === 0){
+        signout.innerText = "Login"
+        count4 = 1
+    }else{
+        signout.innerText = "Sign Out"
+        count4 = 0
+    }
 }
