@@ -26,7 +26,7 @@ function highPass(arr, cutoff) {
     return filteredArr;
 }
 var result = highPass([6, 8, 3, 10, -2, 5, 9], 5);
-console.log(result); // we expect back [6, 8, 10, 9]
+console.log(result);
 
 
 // Given an array of numbers return a count of how many of the numbers are larger than the average.
@@ -44,11 +44,10 @@ function betterThanAverage(arr) {
     return count;
 }
 var result = betterThanAverage([6, 8, 3, 10, -2, 5, 9]);
-console.log(result); // we expect back 4
+console.log(result);
 
 
 // Write a function that will reverse the values an array and return them.
-// I couldn't figure this one out on my own so I got this from the solution video my instructor provided.
 function reverse(arr) {
     var left = 0;
     var right = arr.length - 1;
@@ -62,7 +61,7 @@ function reverse(arr) {
     return arr;
 }
 var result = reverse(["a", "b", "c", "d", "e"]);
-console.log(result); // we expect back ["e", "d", "c", "b", "a"]
+console.log(result);
 
 
 // Write a function that will return an array of Fibonacci numbers up to a given length n. Fibonacci numbers are calculated by adding the last two values in the sequence together. So if the 4th value is 2 and the 5th value is 3 then the next value in the sequence is 5.
@@ -75,4 +74,4 @@ function fibonacciArray(n) {
 }
 
 var result = fibonacciArray(10);
-console.log(result); // we expect back [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+console.log(result);
