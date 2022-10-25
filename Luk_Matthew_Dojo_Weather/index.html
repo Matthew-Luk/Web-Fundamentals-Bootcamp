@@ -27,9 +27,9 @@
                 </div>
                 <div class="content-topr">
                     <p>show temperature in
-                        <select onchange="convert()" name="temp" id="temp">
-                            <option>°C</option>
-                            <option>°F</option>
+                        <select onchange="convert(this)" name="temp" id="temp">
+                            <option value="°C" selected>°C</option>
+                            <option value="°F">°F</option>
                         </select>
                     </p>
                 </div>
@@ -39,25 +39,37 @@
                     <h3>Today</h3>
                     <img class="weatherp" src="./assets/some_rain.png" alt="some_rain">
                     <p>some rain</p>
-                    <p><span class="high" id="temp1">24</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="low" id="temp2">18</span></p>
+                    <div class="temps">
+                        <p class="high" id="temp1">24</p>
+                        <p class="low" id="temp2">18</p>
+                    </div>
                 </div>
                 <div class="weather">
                     <h3>Tomorrow</h3>
                     <img class="weatherp" src="./assets/some_sun.png" alt="some_sun">
                     <p>some rain</p>
-                    <p><span class="high" id="temp3">27</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="low" id="temp4">19</span></p>
+                    <div class="temps">
+                        <p class="high" id="temp3">27</p>
+                        <p class="low" id="temp4">19</p>
+                    </div>
                 </div>
                 <div class="weather">
                     <h3>Friday</h3>
                     <img class="weatherp" src="./assets/some_clouds.png" alt="some_clouds">
                     <p>some rain</p>
-                    <p><span class="high" id="temp5">21</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="low" id="temp6">16</span></p>
+                    <div class="temps">
+                        <p class="high" id="temp5">21</p>
+                        <p class="low" id="temp6">16</p>
+                    </div>
                 </div>
                 <div class="weather">
                     <h3>Saturday</h3>
                     <img class="weatherp" src="./assets/some_sun.png" alt="some_sun.png">
                     <p>some rain</p>
-                    <p><span class="high" id="temp7">26</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="low" id="temp8">21</span></p>
+                    <div class="temps">
+                        <p class="high" id="temp7">26</p>
+                        <p class="low" id="temp8">21</p>
+                    </div>
                 </div>
             </div>
         </div>
