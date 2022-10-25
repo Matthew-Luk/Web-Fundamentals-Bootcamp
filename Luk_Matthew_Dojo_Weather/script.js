@@ -4,10 +4,9 @@ function hide() {
 }
 
 function city() {
-    alert("Loading weather report...")
+    alert("Loading weather report for Burbank")
 }
 
-// The three functions below were provided to me by my instructor 
 function ctof(temp) {
     return Math.round(9 / 5 * temp + 32);
 } 
@@ -17,15 +16,14 @@ function ftoc(temp) {
 } 
 
 function convert(element) {
-    console.log(temp);
+    console.log(element.value);
     for(var i=1; i<9; i++){
         var temp = document.getElementById("temp" + i);
-        var tempVal = temp.innerText;
-        if(temp.value == "°C") {
+        var tempVal = parseInt(temp.innerText);
+        if(element.value == "°C") {
             temp.innerText = ftoc(tempVal);
         }else{
             temp.innerText = ctof(tempVal);
         }
-        
     }
 }
