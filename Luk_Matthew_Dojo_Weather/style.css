@@ -90,13 +90,19 @@ h1 {
     display: flex;
 }
 
+.temps{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
 .high, .low {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     font-weight: bold;
 }
 
-high::after, low::after {
+.high::after, .low::after {
     content: "°";
 }
 
